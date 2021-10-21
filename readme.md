@@ -80,25 +80,6 @@ Informações do pacote:
 
 ```info
 rpm -qi grafana
-Name        : grafana
-Version     : 8.2.2
-Release     : 1
-Architecture: x86_64
-Install Date: qui 21 out 2021 17:12:18 -03
-Group       : default
-Size        : 224404530
-License     : "Apache 2.0"
-Signature   : RSA/SHA256, qui 21 out 2021 07:10:03 -03, Key ID 8c8c34c524098cb6
-Source RPM  : grafana-8.2.2-1.src.rpm
-Build Date  : qui 21 out 2021 07:09:34 -03
-Build Host  : 978da501e6f9
-Relocations : /
-Packager    : contact@grafana.com
-Vendor      : Grafana
-URL         : https://grafana.com
-Summary     : Grafana
-Description :
-Grafana
 ```
 
 ### 🛠 Etapa 3: iniciar o serviço Grafana
@@ -123,28 +104,6 @@ Seu grafana-serverserviço deve mostrar o estado de execução.
 ```service
 systemctl status grafana-server.service
 ```
-
-● grafana-server.service - Grafana instance
-   Loaded: loaded (/usr/lib/systemd/system/grafana-server.service; enabled; vendor preset: disabled)
-   Active: active (running) since Thu 2021-10-21 17:13:10 -03; 35min ago
-     Docs: http://docs.grafana.org
- Main PID: 26986 (grafana-server)
-    Tasks: 12 (limit: 4518)
-   Memory: 127.0M
-   CGroup: /system.slice/grafana-server.service
-           └─26986 /usr/sbin/grafana-server --config=/etc/grafana/grafana.ini --pidfile=/var/run/grafan>
-
-out 21 17:13:10 grafana grafana-server[26986]: t=2021-10-21T17:13:10-0300 lvl=info msg="Registering plu>
-out 21 17:13:10 grafana grafana-server[26986]: t=2021-10-21T17:13:10-0300 lvl=info msg="External plugin>
-out 21 17:13:10 grafana grafana-server[26986]: t=2021-10-21T17:13:10-0300 lvl=info msg="Live Push Gatew>
-out 21 17:13:10 grafana grafana-server[26986]: t=2021-10-21T17:13:10-0300 lvl=info msg="Writing PID fil>
-out 21 17:13:10 grafana systemd[1]: Started Grafana instance.
-out 21 17:13:10 grafana grafana-server[26986]: t=2021-10-21T17:13:10-0300 lvl=info msg="HTTP Server Lis>
-out 21 17:16:09 grafana grafana-server[26986]: t=2021-10-21T17:16:09-0300 lvl=info msg="Request Complet>
-out 21 17:16:19 grafana grafana-server[26986]: t=2021-10-21T17:16:19-0300 lvl=info msg="Successful Logi>
-out 21 17:16:45 grafana grafana-server[26986]: t=2021-10-21T17:16:45-0300 lvl=info msg="Request Complet>
-out 21 17:16:46 grafana grafana-server[26986]: t=2021-10-21T17:16:46-0300 lvl=info msg="Request Complet>
-lines 1-20/20 (END)
 
 Por padrão, o Grafana gravará logs no  diretório `/var/log/` 
 grafana e seu banco de dados SQLite está localizado em `/var/lib/grafana/grafana.db`

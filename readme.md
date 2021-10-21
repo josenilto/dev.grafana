@@ -125,6 +125,7 @@ Seu grafana-serverserviço deve mostrar o estado de execução.
 ```service
 systemctl status grafana-server.service
 ```
+`
 ● grafana-server.service - Grafana instance
    Loaded: loaded (/usr/lib/systemd/system/grafana-server.service; enabled; vendor preset: disabled)
    Active: active (running) since Thu 2021-10-21 17:13:10 -03; 35min ago
@@ -146,12 +147,12 @@ out 21 17:16:19 grafana grafana-server[26986]: t=2021-10-21T17:16:19-0300 lvl=in
 out 21 17:16:45 grafana grafana-server[26986]: t=2021-10-21T17:16:45-0300 lvl=info msg="Request Complet>
 out 21 17:16:46 grafana grafana-server[26986]: t=2021-10-21T17:16:46-0300 lvl=info msg="Request Complet>
 lines 1-20/20 (END)
-
-Por padrão, o Grafana gravará logs no  diretório / var / log / 
-grafana e seu banco de dados SQLite está localizado em/var/lib/grafana/grafana.db
+`
+Por padrão, o Grafana gravará logs no  diretório `/var/log/` 
+grafana e seu banco de dados SQLite está localizado em `/var/lib/grafana/grafana.db`
 
 ### 🛠 Etapa 4: Abra a porta do firewall para Grafana
-Se você tiver um serviço firewalld em execução, permita a porta  3000 de acesso ao painel da rede:
+Se você tiver um serviço firewalld em execução, permita a porta `3000` de acesso ao painel da rede:
 
 ```port
 sudo firewall-cmd --add-port=3000/tcp --permanent
@@ -159,14 +160,13 @@ sudo firewall-cmd --reload
 ```
 
 ### 🛠 Etapa 5: Acesse o Grafana Dashboard
-O painel da web do Grafana pode ser acessado em http://[Server IP|Hostname]:3000) 
+O painel da web do Grafana pode ser acessado em `http://[Server IP|Hostname]:3000` 
 
 Os logins padrão são:
 
-```login
-# username: admin
-# Password: admin
-```
+username: admin
+Password: admin
+
 Altere a senha do administrador.
 
 <h4 align="center"> 

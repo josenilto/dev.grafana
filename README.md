@@ -20,30 +20,30 @@ O primeiro é o método preferido, pois é fácil atualizar e desinstalar o Graf
 
 Alguns novos recursos do Grafana 8 são:
 
-#### ✅ Painéis da biblioteca : </br>
+✅ Painéis da biblioteca : </br>
 Permitem que os usuários criem painéis que podem ser usados em vários painéis
 
-#### ✅ Navegador de métricas Prometheus : </br>
+✅ Navegador de métricas Prometheus : </br>
 Permite que você encontre rapidamente as métricas e selecione rótulos relevantes para construir consultas básicas.
 
-#### ✅ Alertas do Grafana v8.0 : </br>
+✅ Alertas do Grafana v8.0 : </br>
 Centraliza as informações de alerta para alertas gerenciados pelo Grafana e alertas de fontes de dados compatíveis 
 com o Prometheus em uma IU e API.
 
-#### ✅ Streaming em tempo real : </br>
+✅ Streaming em tempo real : </br>
 As fontes de dados agora podem enviar atualizações em tempo real para painéis por meio de uma conexão de websocket
 
-#### ✅ Visualização do gráfico de barras : </br>
+✅ Visualização do gráfico de barras : </br>
 Uma nova visualização que suporta dados categóricos.
 
-#### ✅ Visualização de histograma : </br>
+✅ Visualização de histograma : </br>
 Este recurso oculto do antigo painel Gráfico agora é uma visualização independente
 
-#### ✅ Visualização da linha do tempo do estado : </br>
+✅ Visualização da linha do tempo do estado : </br>
 A visualização da linha do tempo do estado mostra mudanças discretas de estado ao longo do tempo
 Visualização de séries temporais fora do Beta e agora está se transformando em um estado estável.
 
-#### ✅ Baixar logs : </br>
+✅ Baixar logs : </br>
 Ao inspecionar um painel, agora você pode baixar os resultados do log como um arquivo de texto (.txt).
 
 ### 🛠 Etapa 1: Adicionar repositório Grafana 8 YUM

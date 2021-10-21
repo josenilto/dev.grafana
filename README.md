@@ -39,7 +39,7 @@ Ao inspecionar um painel, agora você pode baixar os resultados do log como um a
 
 --
 
-Etapa 1: Adicionar repositório Grafana 8 YUM
+## Etapa 1: Adicionar repositório Grafana 8 YUM
 Execute os comandos abaixo como usuário com privilégios sudo ou como usuário root para adicionar conteúdo ao repositório.
 
 cat <<EOF | sudo tee /etc/yum.repos.d/grafana.repo
@@ -60,7 +60,7 @@ sudo dnf makecache
 
 --
 
-Etapa 2: Instale o Grafana 8 no CentOS 8 / RHEL 8
+## Etapa 2: Instale o Grafana 8 no CentOS 8 / RHEL 8
 Quando o repositório do Grafana for configurado, o Grafana pode ser facilmente instalado executando os comandos abaixo:
 
 sudo dnf -y install grafana
@@ -90,7 +90,7 @@ Grafana
 
 --
 
-Etapa 3: iniciar o serviço Grafana
+### Etapa 3: iniciar o serviço Grafana
 O serviço Grafana é gerenciado pelo systemd. Inicie o serviço e habilite-o para iniciar na inicialização.
 
 sudo systemctl enable --now grafana-server.service 
@@ -137,13 +137,13 @@ grafana e seu banco de dados SQLite está localizado em/var/lib/grafana/grafana.
 
 --
 
-Etapa 4: Abra a porta do firewall para Grafana
+## Etapa 4: Abra a porta do firewall para Grafana
 Se você tiver um serviço firewalld em execução, permita a porta  3000 de acesso ao painel da rede:
 
 sudo firewall-cmd --add-port=3000/tcp --permanent
 sudo firewall-cmd --reload
 
-Etapa 5: Acesse o Grafana Dashboard
+## Etapa 5: Acesse o Grafana Dashboard
 O painel da web do Grafana pode ser acessado em http://[Server IP|Hostname]:3000
 
 Os logins padrão são:
@@ -152,3 +152,7 @@ username: admin
 Password: admin
 
 Altere a senha do administrador.
+
+<h4 align="center"> 
+	🚧 Tutorial de instalação 🚀 Em construção...  🚧
+</h4>

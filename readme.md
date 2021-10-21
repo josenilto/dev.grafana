@@ -83,7 +83,8 @@ rpm -qi grafana
 ```
 
 ### 🛠 Etapa 3: iniciar o serviço Grafana
-O serviço Grafana é gerenciado pelo systemd. Inicie o serviço e habilite-o para iniciar na inicialização.
+O serviço Grafana é gerenciado pelo systemd. </br>
+Inicie o serviço e habilite-o para iniciar na inicialização.
 
 ```service
 sudo systemctl enable --now grafana-server.service

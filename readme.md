@@ -155,6 +155,7 @@ Se você tiver um serviço firewalld em execução, permita a porta `3000` de ac
 ```port
 sudo firewall-cmd --add-port=3000/tcp --permanent
 sudo firewall-cmd --reload
+sudo firewall-cmd --list-all 
 ```
 
 ### 🛠 Etapa 5: Acesse o Grafana Dashboard
@@ -162,7 +163,7 @@ O painel da web do Grafana pode ser acessado em `http://[Server IP|Hostname]:300
 
 Os logins padrão são:
 
-username: admin
+username: admin </br>
 Password: admin
 
 Altere a senha do administrador.

@@ -159,7 +159,7 @@ sudo firewall-cmd --reload
 ```
 
 ### 🛠 Etapa 5: Acesse o Grafana Dashboard
-O painel da web do Grafana pode ser acessado em http://[Server IP|Hostname]:3000
+O painel da web do Grafana pode ser acessado em http://[Server IP|Hostname]:3000) 
 
 Os logins padrão são:
 

@@ -88,10 +88,6 @@ O serviço Grafana é gerenciado pelo systemd. Inicie o serviço e habilite-o pa
 ```service
 sudo systemctl enable --now grafana-server.service
 ```
- Synchronizing state of grafana-server.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
- Executing: /usr/lib/systemd/systemd-sysv-install enable grafana-server
- Created symlink /etc/systemd/system/multi-user.target.wants/grafana-server.service → /usr/lib/systemd/system/grafana-server.service.
-
 
 A porta padrão usada é `3000`. 
 Se você tiver outro processo usando esta porta, você precisará definir a porta personalizada no arquivo de 

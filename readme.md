@@ -3,7 +3,7 @@
 Grafana é um aplicativo da web de análise de código aberto e visualização interativa multi-plataforma. <br>
 Ele fornece tabelas, gráficos e alertas para a web quando conectado a fontes de dados compatíveis.
 
-Grafana é um editor de gráficos e painel de métricas gratuito e de código aberto para várias fontes de dados;
+> Grafana é um editor de gráficos e painel de métricas gratuito e de código aberto para várias fontes de dados;
 
 ##### ✅ Referências de dados
 
@@ -18,35 +18,33 @@ Grafana é um editor de gráficos e painel de métricas gratuito e de código ab
 O Grafana pode ser instalado no RHEL / CentOS 8 do repositório YUM ou baixando e instalando manualmente o pacote .rpm. </br>
 O primeiro é o método preferido, pois é fácil atualizar e desinstalar o Grafana com o gerenciador de pacotes yum.
 
-Alguns novos recursos do Grafana 8 são:
+> Alguns novos recursos do Grafana 8 são:
 
-✅ Painéis da biblioteca : </br>
+##### ✅ Painéis da biblioteca : </br>
 Permitem que os usuários criem painéis que podem ser usados em vários painéis
 
-✅ Navegador de métricas Prometheus : </br>
+##### ✅ Navegador de métricas Prometheus : </br>
 Permite que você encontre rapidamente as métricas e selecione rótulos relevantes para construir consultas básicas.
 
-✅ Alertas do Grafana v8.0 : </br>
+##### ✅ Alertas do Grafana v8.0 : </br>
 Centraliza as informações de alerta para alertas gerenciados pelo Grafana e alertas de fontes de dados compatíveis 
 com o Prometheus em uma IU e API.
 
-✅ Streaming em tempo real : </br>
+##### ✅ Streaming em tempo real : </br>
 As fontes de dados agora podem enviar atualizações em tempo real para painéis por meio de uma conexão de websocket
 
-✅ Visualização do gráfico de barras : </br>
+##### ✅ Visualização do gráfico de barras : </br>
 Uma nova visualização que suporta dados categóricos.
 
-✅ Visualização de histograma : </br>
+##### ✅ Visualização de histograma : </br>
 Este recurso oculto do antigo painel Gráfico agora é uma visualização independente
 
-✅ Visualização da linha do tempo do estado : </br>
+##### ✅ Visualização da linha do tempo do estado : </br>
 A visualização da linha do tempo do estado mostra mudanças discretas de estado ao longo do tempo
 Visualização de séries temporais fora do Beta e agora está se transformando em um estado estável.
 
-✅ Baixar logs : </br>
+##### ✅ Baixar logs : </br>
 Ao inspecionar um painel, agora você pode baixar os resultados do log como um arquivo de texto (.txt).
-
----
 
 ### 🛠 Etapa 1: Adicionar repositório Grafana 8 YUM
 Execute os comandos abaixo como usuário com privilégios sudo ou como usuário root para adicionar conteúdo ao repositório.
@@ -125,7 +123,7 @@ Seu grafana-serverserviço deve mostrar o estado de execução.
 ```service
 systemctl status grafana-server.service
 ```
-`
+
 ● grafana-server.service - Grafana instance
    Loaded: loaded (/usr/lib/systemd/system/grafana-server.service; enabled; vendor preset: disabled)
    Active: active (running) since Thu 2021-10-21 17:13:10 -03; 35min ago
@@ -147,7 +145,7 @@ out 21 17:16:19 grafana grafana-server[26986]: t=2021-10-21T17:16:19-0300 lvl=in
 out 21 17:16:45 grafana grafana-server[26986]: t=2021-10-21T17:16:45-0300 lvl=info msg="Request Complet>
 out 21 17:16:46 grafana grafana-server[26986]: t=2021-10-21T17:16:46-0300 lvl=info msg="Request Complet>
 lines 1-20/20 (END)
-`
+
 Por padrão, o Grafana gravará logs no  diretório `/var/log/` 
 grafana e seu banco de dados SQLite está localizado em `/var/lib/grafana/grafana.db`
 

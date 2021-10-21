@@ -46,6 +46,7 @@ Visualização de séries temporais fora do Beta e agora está se transformando 
 ##### ✅ Baixar logs : </br>
 Ao inspecionar um painel, agora você pode baixar os resultados do log como um arquivo de texto (.txt).
 
+
 ### 🛠 Etapa 1: Adicionar repositório Grafana 8 YUM
 Execute os comandos abaixo como usuário com privilégios `sudo` ou como usuário `root` para adicionar conteúdo ao repositório.
 
@@ -69,6 +70,7 @@ Você pode, opcionalmente, atualizar seu índice de cache para os pacotes dispon
 sudo dnf makecache
 ```
 
+
 ### 🛠 Etapa 2: Instale o Grafana 8 no CentOS 8 / RHEL 8
 Quando o repositório do Grafana for configurado, o Grafana pode ser facilmente instalado executando os comandos abaixo:
 
@@ -81,6 +83,7 @@ Informações do pacote:
 ```info
 rpm -qi grafana
 ```
+
 
 ### 🛠 Etapa 3: iniciar o serviço Grafana
 O serviço Grafana é gerenciado pelo systemd. </br>
@@ -105,6 +108,7 @@ systemctl status grafana-server.service
 Por padrão, o Grafana gravará logs no  diretório `/var/log/` 
 grafana e seu banco de dados SQLite está localizado em `/var/lib/grafana/grafana.db`
 
+
 ### 🛠 Etapa 4: Abra a porta do firewall para Grafana
 Se você tiver um serviço firewalld em execução, permita a porta `3000` de acesso ao painel da rede:
 
@@ -113,6 +117,7 @@ sudo firewall-cmd --add-port=3000/tcp --permanent
 sudo firewall-cmd --reload
 sudo firewall-cmd --list-all 
 ```
+
 
 ### 🛠 Etapa 5: Acesse o Grafana Dashboard
 O painel da web do Grafana pode ser acessado em `http://[Server IP|Hostname]:3000` 

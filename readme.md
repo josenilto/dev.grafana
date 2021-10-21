@@ -112,11 +112,11 @@ sudo systemctl enable --now grafana-server.service
  Created symlink /etc/systemd/system/multi-user.target.wants/grafana-server.service → /usr/lib/systemd/system/grafana-server.service.
 
 
-A porta padrão usada é 3000. 
+A porta padrão usada é `3000`. 
 Se você tiver outro processo usando esta porta, você precisará definir a porta personalizada no arquivo de 
-configuração Grafana /etc/grafana/grafana.ini.
+configuração Grafana `/etc/grafana/grafana.ini`.
 
-http_port = 3000
+`http_port = 3000`
 
 Seu grafana-serverserviço deve mostrar o estado de execução.
 
@@ -169,9 +169,5 @@ Password: admin
 Altere a senha do administrador.
 
 <h4 align="center"> 
-	🚧 Tutorial de instalação 🚀 Em construção...  🚧
-	
+	🚧 Tutorial de instalação 🚀 Em construção...  🚧	
 </h4>
-
-
-😲

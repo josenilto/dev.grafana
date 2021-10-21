@@ -1,10 +1,19 @@
-### - Dev Grafana | Como posso instalar o Grafana 8. 
+# 🛠 Dev Grafana | Como posso instalar o Grafana 8. 
 
-Grafana é um aplicativo da web de análise de código aberto e visualização interativa multi-plataforma. Ele fornece tabelas, gráficos e alertas para a web quando conectado a fontes de dados compatíveis.
+Grafana é um aplicativo da web de análise de código aberto e visualização interativa multi-plataforma. <br>
+Ele fornece tabelas, gráficos e alertas para a web quando conectado a fontes de dados compatíveis.
 
-Grafana é um editor de gráficos e painel de métricas gratuito e de código aberto para várias fontes de dados, como Elasticsearch, Graphite, OpenTSDB, Prometheus e InfluxDB.
+Grafana é um editor de gráficos e painel de métricas gratuito e de código aberto para várias fontes de dados;
 
-Este guia irá guiá-lo através da instalação do Grafana no RHEL / CentOS 8.
+#### 🚀 Referências de dados
+
+- Elasticsearch
+- Graphite
+- OpenTSDB
+- Prometheus
+- InfluxDB
+
+## Este guia irá guiá-lo através da instalação do Grafana no RHEL / CentOS 8.
 
 O Grafana pode ser instalado no RHEL / CentOS 8 do repositório YUM ou baixando e instalando manualmente o pacote .rpm. 
 O primeiro é o método preferido, pois é fácil atualizar e desinstalar o Grafana com o gerenciador de pacotes yum.
@@ -38,6 +47,23 @@ Baixar logs :
 Ao inspecionar um painel, agora você pode baixar os resultados do log como um arquivo de texto (.txt).
 
 --
+
+Tabela de conteúdos
+=================
+<!--ts-->
+   * [Sobre](#Sobre)
+   * [Tabela de Conteudo](#tabela-de-conteudo)
+   * [Instalação](#instalacao)
+   * [Como usar](#como-usar)
+      * [Pre Requisitos](#pre-requisitos)
+      * [Local files](#local-files)
+      * [Remote files](#remote-files)
+      * [Multiple files](#multiple-files)
+      * [Combo](#combo)
+   * [Tests](#testes)
+   * [Tecnologias](#tecnologias)
+<!--te-->
+
 
 ## Etapa 1: Adicionar repositório Grafana 8 YUM
 Execute os comandos abaixo como usuário com privilégios sudo ou como usuário root para adicionar conteúdo ao repositório.

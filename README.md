@@ -46,9 +46,12 @@ Visualização de séries temporais fora do Beta e agora está se transformando 
 ✅ Baixar logs : </br>
 Ao inspecionar um painel, agora você pode baixar os resultados do log como um arquivo de texto (.txt).
 
+---
+
 ### 🛠 Etapa 1: Adicionar repositório Grafana 8 YUM
 Execute os comandos abaixo como usuário com privilégios sudo ou como usuário root para adicionar conteúdo ao repositório.
 
+```cat
 cat <<EOF | sudo tee /etc/yum.repos.d/grafana.repo
 [grafana]
 name=grafana
@@ -60,20 +63,24 @@ gpgkey=https://packages.grafana.com/gpg.key
 sslverify=1
 sslcacert=/etc/pki/tls/certs/ca-bundle.crt
 EOF
+```
 
 Você pode, opcionalmente, atualizar seu índice de cache para os pacotes disponíveis:
 
+```pacote
 sudo dnf makecache
-
---
+```
 
 ### 🛠 Etapa 2: Instale o Grafana 8 no CentOS 8 / RHEL 8
 Quando o repositório do Grafana for configurado, o Grafana pode ser facilmente instalado executando os comandos abaixo:
 
+```install
 sudo dnf -y install grafana
+```
 
 Informações do pacote:
 
+```info
 rpm -qi grafana
 Name        : grafana
 Version     : 8.2.2
@@ -94,17 +101,18 @@ URL         : https://grafana.com
 Summary     : Grafana
 Description :
 Grafana
-
---
+```
 
 ### 🛠 Etapa 3: iniciar o serviço Grafana
 O serviço Grafana é gerenciado pelo systemd. Inicie o serviço e habilite-o para iniciar na inicialização.
 
-sudo systemctl enable --now grafana-server.service 
- 
+```service
+sudo systemctl enable --now grafana-server.service
+```
  Synchronizing state of grafana-server.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
  Executing: /usr/lib/systemd/systemd-sysv-install enable grafana-server
  Created symlink /etc/systemd/system/multi-user.target.wants/grafana-server.service → /usr/lib/systemd/system/grafana-server.service.
+
 
 A porta padrão usada é 3000. 
 Se você tiver outro processo usando esta porta, você precisará definir a porta personalizada no arquivo de 
@@ -114,8 +122,9 @@ http_port = 3000
 
 Seu grafana-serverserviço deve mostrar o estado de execução.
 
+```service
 systemctl status grafana-server.service
-
+```
 ● grafana-server.service - Grafana instance
    Loaded: loaded (/usr/lib/systemd/system/grafana-server.service; enabled; vendor preset: disabled)
    Active: active (running) since Thu 2021-10-21 17:13:10 -03; 35min ago
@@ -138,17 +147,16 @@ out 21 17:16:45 grafana grafana-server[26986]: t=2021-10-21T17:16:45-0300 lvl=in
 out 21 17:16:46 grafana grafana-server[26986]: t=2021-10-21T17:16:46-0300 lvl=info msg="Request Complet>
 lines 1-20/20 (END)
 
-
 Por padrão, o Grafana gravará logs no  diretório / var / log / 
 grafana e seu banco de dados SQLite está localizado em/var/lib/grafana/grafana.db
-
---
 
 ### 🛠 Etapa 4: Abra a porta do firewall para Grafana
 Se você tiver um serviço firewalld em execução, permita a porta  3000 de acesso ao painel da rede:
 
+```port
 sudo firewall-cmd --add-port=3000/tcp --permanent
 sudo firewall-cmd --reload
+```
 
 ### 🛠 Etapa 5: Acesse o Grafana Dashboard
 O painel da web do Grafana pode ser acessado em http://[Server IP|Hostname]:3000

@@ -47,7 +47,7 @@ Visualização de séries temporais fora do Beta e agora está se transformando 
 Ao inspecionar um painel, agora você pode baixar os resultados do log como um arquivo de texto (.txt).
 
 ### 🛠 Etapa 1: Adicionar repositório Grafana 8 YUM
-Execute os comandos abaixo como usuário com privilégios sudo ou como usuário root para adicionar conteúdo ao repositório.
+Execute os comandos abaixo como usuário com privilégios `sudo` ou como usuário `root` para adicionar conteúdo ao repositório.
 
 ```cat
 cat <<EOF | sudo tee /etc/yum.repos.d/grafana.repo
@@ -65,7 +65,7 @@ EOF
 
 Você pode, opcionalmente, atualizar seu índice de cache para os pacotes disponíveis:
 
-```pacote
+```
 sudo dnf makecache
 ```
 

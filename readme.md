@@ -119,7 +119,7 @@ sudo firewall-cmd --reload
 sudo firewall-cmd --list-all 
 ```
 ```cockipt
-rm -f /etc/motd.d/cockpit
+sudo rm -f /etc/motd.d/cockpit
 ```
 ### 🛠 Etapa 5: Acesse o Grafana Dashboard
 O painel da web do Grafana pode ser acessado em `http://[Server IP|Hostname]:3000` 

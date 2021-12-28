@@ -7,11 +7,11 @@ Ele fornece tabelas, gráficos e alertas para a web quando conectado a fontes de
 
 ##### ✅ Referências de dados
 
-- Elasticsearch
-- Graphite
-- OpenTSDB
-- Prometheus
-- InfluxDB
+- [x] Elasticsearch
+- [x] Graphite
+- [x] OpenTSDB
+- [x] Prometheus
+- [x] InfluxDB
 
 ### 🎲 Este guia irá guiá-lo através da instalação do Grafana no RHEL / CentOS 8.
 

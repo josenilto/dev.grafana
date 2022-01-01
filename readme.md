@@ -5,7 +5,7 @@ Ele fornece tabelas, gráficos e alertas para a web quando conectado a fontes de
 
 > Grafana é um editor de gráficos e painel de métricas gratuito e de código aberto para várias fontes de dados;
 
-##### ✅ Referências de dados
+✅ **Referências de dados**
 
 - [x] Elasticsearch
 - [x] Graphite

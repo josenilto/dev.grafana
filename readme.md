@@ -113,10 +113,11 @@ grafana e seu banco de dados SQLite está localizado em `/var/lib/grafana/grafan
 Se você tiver um serviço firewalld em execução, permita a porta `3000` de acesso ao painel da rede:
 
 ```
-sudo firewall-cmd --permanent --add-service=http
+sudo firewall-cmd --permanent --add-service=grafana
+
 sudo firewall-cmd --permanent --remove-service=dhcpv6-client
 sudo firewall-cmd --permanent --remove-service=cockpit
-sudo firewall-cmd --permanent --add-port=3000/tcp
+
 sudo firewall-cmd --reload
 sudo firewall-cmd --list-all 
 ```

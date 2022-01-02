@@ -115,7 +115,7 @@ Por padrão, o Grafana gravará logs no  diretório `/var/log/`
 grafana e seu banco de dados SQLite está localizado em `/var/lib/grafana/grafana.db`
 
 
-🛠 **Etapa 4 :** Abra a porta do firewall para Grafana.
+🛠 **Etapa 4 :** Abra a porta do firewall para Grafana.</br>
 Se você tiver um serviço firewalld em execução, permita a porta `3000` de acesso ao painel da rede:
 
 ```

@@ -90,28 +90,6 @@ Informações do pacote:
 rpm -qi grafana
 ```
 
-`
-Name        : grafana
-Version     : 8.3.3
-Release     : 1
-Architecture: x86_64
-Install Date: sáb 01 jan 2022 23:25:50 -03
-Group       : default
-Size        : 246792203
-License     : AGPLv3
-Signature   : RSA/SHA256, sex 10 dez 2021 14:04:59 -03, Key ID 8c8c34c524098cb6
-Source RPM  : grafana-8.3.3-1.src.rpm
-Build Date  : sex 10 dez 2021 14:04:28 -03
-Build Host  : 8dfbe6591673
-Relocations : /
-Packager    : contact@grafana.com
-Vendor      : Grafana
-URL         : https://grafana.com
-Summary     : Grafana
-Description :
-Grafana
-`
-
 🛠 **Etapa 3 :** iniciar o serviço Grafana
 O serviço Grafana é gerenciado pelo systemd. </br>
 Inicie o serviço e habilite-o para iniciar na inicialização.

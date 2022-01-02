@@ -135,8 +135,8 @@ O painel da web do Grafana pode ser acessado em `http://[Server IP|Hostname]:300
 
 Os logins padrão são:
 
-username: admin </br>
-Password: admin
+Username: `admin` </br>
+Password: `admin`
 
 Altere a senha do administrador.
 

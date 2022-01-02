@@ -90,6 +90,7 @@ Informações do pacote:
 rpm -qi grafana
 ```
 
+`
 Name        : grafana
 Version     : 8.3.3
 Release     : 1
@@ -109,6 +110,7 @@ URL         : https://grafana.com
 Summary     : Grafana
 Description :
 Grafana
+`
 
 🛠 **Etapa 3 :** iniciar o serviço Grafana
 O serviço Grafana é gerenciado pelo systemd. </br>

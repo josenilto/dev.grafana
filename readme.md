@@ -58,7 +58,7 @@ Ao inspecionar um painel, agora você pode baixar os resultados do log como um a
 🛠 **Etapa 1 :** Adicionar repositório Grafana 8 YUM  
 Execute os comandos abaixo como usuário com privilégios **`sudo`** ou como usuário **`root`** para adicionar conteúdo ao repositório.
 
-```cat
+```bash
 cat <<EOF | sudo tee /etc/yum.repos.d/grafana.repo
 [grafana]
 name=grafana
@@ -119,7 +119,7 @@ grafana e seu banco de dados SQLite está localizado em **`/var/lib/grafana/graf
 🛠 **Etapa 4 :** Abra a porta do firewall para Grafana.</br>
 Se você tiver um serviço firewalld em execução, permita a porta **`3000`** de acesso ao painel da rede:
 
-```
+```bash
 sudo firewall-cmd --permanent --add-service=grafana
 
 sudo firewall-cmd --permanent --remove-service=dhcpv6-client

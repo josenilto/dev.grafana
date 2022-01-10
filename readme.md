@@ -102,7 +102,7 @@ A porta padrão usada é **`3000`**.
 Se você tiver outro processo usando esta porta, você precisará definir a porta personalizada no arquivo de 
 configuração Grafana **`/etc/grafana/grafana.ini`**.
 
-`http_port = 3000`
+**`http_port = 3000`**
 
 Seu grafana-serverserviço deve mostrar o estado de execução.
 

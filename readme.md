@@ -1,4 +1,4 @@
-## 🛠 Dev Grafana | Instalar e configurar o Grafana 8. 
+### 🛠 Dev Grafana | Instalar e configurar o Grafana 8. 
 
 Grafana é um aplicativo da web de análise de código aberto e visualização interativa multi-plataforma. <br>
 Ele fornece tabelas, gráficos e alertas para a web quando conectado a fontes de dados compatíveis.
@@ -19,7 +19,7 @@ yum update -y && yum upgrade -y
 - [x] Prometheus
 - [x] InfluxDB
 
-## 🎲 **Este guia irá guiá-lo através da instalação do Grafana no RHEL / CentOS 8.**
+### 🎲 **Este guia irá guiá-lo através da instalação do Grafana no RHEL / CentOS 8.**
 
 O Grafana pode ser instalado no RHEL / CentOS 8 do repositório YUM ou baixando e instalando manualmente o pacote .rpm. </br>
 O primeiro é o método preferido, pois é fácil atualizar e desinstalar o Grafana com o gerenciador de pacotes yum.

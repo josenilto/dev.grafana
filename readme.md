@@ -147,8 +147,8 @@ Altere a senha do administrador.
 [<img title="Grafana" align="left" alt="josenilto | Twitter" width="28px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/grafana.svg" />][grafana]
 [<img title="YamLint" align="left" alt="josenilto | Twitter" width="28px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
 
-[Grafana]: https://docs.ansible.com/ansible/latest/index.html 
-[Website]: 
+[Grafana]: https://grafana.com/grafana/
+[Website]: https://grafana.com/grafana/
 
 
 <h4 align="center"> 

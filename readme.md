@@ -110,12 +110,12 @@ Seu grafana-serverserviço deve mostrar o estado de execução.
 systemctl status grafana-server.service
 ```
 
-Por padrão, o Grafana gravará logs no  diretório `/var/log/` 
-grafana e seu banco de dados SQLite está localizado em `/var/lib/grafana/grafana.db`
+Por padrão, o Grafana gravará logs no  diretório **`/var/log/`** 
+grafana e seu banco de dados SQLite está localizado em **`/var/lib/grafana/grafana.db`**
 
 
 🛠 **Etapa 4 :** Abra a porta do firewall para Grafana.</br>
-Se você tiver um serviço firewalld em execução, permita a porta `3000` de acesso ao painel da rede:
+Se você tiver um serviço firewalld em execução, permita a porta **`3000`** de acesso ao painel da rede:
 
 ```
 sudo firewall-cmd --permanent --add-service=grafana
@@ -129,13 +129,13 @@ sudo firewall-cmd --list-all
 ```cockipt
 sudo rm -f /etc/motd.d/cockpit
 ```
-🛠 **Etapa 5 :** Acesse o Grafana Dashboard.</br>
-O painel da web do Grafana pode ser acessado em `http://[Server IP|Hostname]:3000` 
+🛠 **Etapa 5 :** Acesse o Grafana Dashboard.  
+O painel da web do Grafana pode ser acessado em **`http://[Server IP|Hostname]:3000`** 
 
 Os logins padrão são:
 
-Username: `admin` </br>
-Password: `admin`
+Username: **`admin`**  
+Password: **`admin`**
 
 Altere a senha do administrador.
 

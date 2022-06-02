@@ -1,4 +1,4 @@
-### 🛠 Dev Grafana | Instalar e configurar o Grafana 8. 
+### 🛠 Dev Grafana | Instalação e configuração o Grafana 8. 
 
 Grafana é um aplicativo da web de análise de código aberto e visualização interativa multi-plataforma. <br>
 Ele fornece tabelas, gráficos e alertas para a web quando conectado a fontes de dados compatíveis.

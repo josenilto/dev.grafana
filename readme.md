@@ -1,4 +1,4 @@
-### 🛠 Dev Grafana | Instalação e configuração o Grafana 8. 
+## 🛠 Dev Grafana | Instalação e configuração o Grafana 8. 
 
 Grafana é um aplicativo da web de análise de código aberto e visualização interativa multi-plataforma. <br>
 Ele fornece tabelas, gráficos e alertas para a web quando conectado a fontes de dados compatíveis.
@@ -11,7 +11,7 @@ Ele fornece tabelas, gráficos e alertas para a web quando conectado a fontes de
 yum update -y && yum upgrade -y
 ```
 
-✅ **Referências de dados**
+✅ **Referências de dados;**
 
 - [x] Elasticsearch
 - [x] Graphite
@@ -26,30 +26,30 @@ O primeiro é o método preferido, pois é fácil atualizar e desinstalar o Graf
 
 > Alguns novos recursos do Grafana 8 são:
 
-✅ **Painéis da biblioteca :**  
+✅ **Painéis da biblioteca ;**  
 Permitem que os usuários criem painéis que podem ser usados em vários painéis
 
-✅ **Navegador de métricas Prometheus :**  
+✅ **Navegador de métricas Prometheus ;**  
 Permite que você encontre rapidamente as métricas e selecione rótulos relevantes para construir consultas básicas.
 
-✅ **Alertas do Grafana v8.0 :**  
+✅ **Alertas do Grafana v8.0 ;**  
 Centraliza as informações de alerta para alertas gerenciados pelo Grafana e alertas de fontes de dados compatíveis 
 com o Prometheus em uma IU e API.
 
-✅ **Streaming em tempo real :**  
+✅ **Streaming em tempo real ;**  
 As fontes de dados agora podem enviar atualizações em tempo real para painéis por meio de uma conexão de websocket
 
-✅ **Visualização do gráfico de barras :**  
+✅ **Visualização do gráfico de barras ;**  
 Uma nova visualização que suporta dados categóricos.
 
-✅ **Visualização de histograma :**  
+✅ **Visualização de histograma ;**  
 Este recurso oculto do antigo painel Gráfico agora é uma visualização independente
 
-✅ **Visualização da linha do tempo do estado :**  
+✅ **Visualização da linha do tempo do estado ;**  
 A visualização da linha do tempo do estado mostra mudanças discretas de estado ao longo do tempo
 Visualização de séries temporais fora do Beta e agora está se transformando em um estado estável.
 
-✅ **Baixar logs :**  
+✅ **Baixar logs ;**  
 Ao inspecionar um painel, agora você pode baixar os resultados do log como um arquivo de texto (.txt).
 
 

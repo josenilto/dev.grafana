@@ -1,5 +1,3 @@
-![Markdown](https://raw.githubusercontent.com/josenilto/dev.grafana/main/grafana.png)
-
 ### 🛠 Dev Grafana | Instalar e configurar o Grafana 8. 
 
 Grafana é um aplicativo da web de análise de código aberto e visualização interativa multi-plataforma. <br>

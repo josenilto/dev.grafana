@@ -5,6 +5,23 @@ Ele fornece tabelas, gráficos e alertas para a web quando conectado a fontes de
 
 > Grafana é um editor de gráficos e painel de métricas gratuito e de código aberto para várias fontes de dados;
 
+
+Este comando é um comando shell que baixa e executa um script para instalar o Docker em seu sistema.   
+O script detectará o sistema operacional e instalará a versão apropriada do Docker para esse sistema.
+
+```bash
+curl -fsSl https://get.docker.com |sh
+```
+
+```bash
+sudo apt  install docker-compose
+```
+
+```bash
+docker compose version
+```
+
+
 ✅**Mantenha seu servidor atualizado ;**
 
 ```Atualização

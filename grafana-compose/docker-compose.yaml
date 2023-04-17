@@ -9,7 +9,7 @@ services:
     image: grafana/loki:2.8.0
     container_name: Loki
     volumes:
-      - grafana_loki:/etc/loki/
+      - /grafana_loki:/etc/loki/
     ports:
       - "3100:3100"
     networks:

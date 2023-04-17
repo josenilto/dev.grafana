@@ -89,6 +89,7 @@ services:
       - 3000:3000
     volumes:
       - grafana-storage:/var/lib/grafana
-      - ./grafana-provisioning/:/etc/grafana/provisioning:ro
+      - ./${myname}/grafana-provisioning/:/etc/grafana/provisioning:ro
+      - /var/run/docker.sock:/var/run/docker.sock
     networks:
       - publica

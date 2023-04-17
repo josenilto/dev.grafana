@@ -1,0 +1,94 @@
+---
+version: "3.8"
+
+networks:
+  publica:
+
+services:
+  loki:
+    image: grafana/loki:2.8.0
+    container_name: Loki
+    volumes:
+      - grafana_loki:/etc/loki/
+    ports:
+      - "3100:3100"
+    networks:
+      - publica
+  promtail:
+    image: grafana/promtail:2.8.0
+    container_name: PromTail
+    volumes:
+      - promtail_log:/var/log
+      - promtail_conf:/etc/promtail/
+    networks:
+      - publica
+
+  prometheus:
+    image: prom/prometheus
+    container_name: Prometheus
+    ports:
+      - 9090:9090
+    networks:
+      - publica
+  influxdb:
+    image: influxdb:1.8.10
+    container_name: InfluxDB
+    restart: always
+    ports:
+      - 8086:8086
+    volumes:
+      - influxdb-storage:/var/lib/influxdb
+    environment:
+      - INFLUXDB_DB=db0
+      - INFLUXDB_ADMIN_USER=${INFLUXDB_USERNAME}
+      - INFLUXDB_ADMIN_PASSWORD=${INFLUXDB_PASSWORD}
+    networks:
+      - publica
+  telegraf:
+    image: telegraf:1.24
+    container_name: Telegraf
+    restart: always
+    volumes:
+      - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
+    depends_on:
+      - influxdb
+    links:
+      - influxdb
+    ports:
+      - 8125:8125
+    networks:
+      - publica
+  chronograf:
+    image: chronograf:1.7
+    container_name: Chronograf
+    restart: always
+    ports:
+      - 127.0.0.1:8888:8888
+    volumes:
+      - chronograf-storage:/var/lib/chronograf
+    depends_on:
+      - influxdb
+    environment:
+      - INFLUXDB_URL=http://influxdb:8086
+      - INFLUXDB_USERNAME=${INFLUXDB_USERNAME}
+      - INFLUXDB_PASSWORD=${INFLUXDB_PASSWORD}
+    networks:
+      - publica
+  grafana:
+    image: grafana/grafana:8.2.6
+    container_name: Grafana-Server
+    restart: always
+    depends_on:
+      - influxdb
+    environment:
+      - GF_SECURITY_ADMIN_USER=${GRAFANA_USERNAME}
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD}
+    links:
+      - influxdb
+    ports:
+      - 3000:3000
+    volumes:
+      - grafana-storage:/var/lib/grafana
+      - ./grafana-provisioning/:/etc/grafana/provisioning:ro
+    networks:
+      - publica
